@@ -1,0 +1,1 @@
+CREATE DEFINER=`root`@`localhost` TRIGGER `sumatoria` BEFORE INSERT ON `account` FOR EACH ROW set @suma  = @suma + NEW.amount

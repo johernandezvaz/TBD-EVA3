@@ -1,0 +1,1 @@
+CREATE DEFINER=`root`@`localhost` TRIGGER `borrar_cuenta` AFTER DELETE ON `account` FOR EACH ROW insert into bitacora(descripcion) value('Borrado de cuenta')
